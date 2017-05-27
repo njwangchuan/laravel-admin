@@ -56,7 +56,7 @@ Node JS
 ### Step 1: 获取代码
 
 ```
-git clone http://git.moon90.com/njwangchuan/laravel-admin.git
+git clone https://github.com/njwangchuan/laravel-admin.git
 ```
 
 ### Step 2: 生成配置文件
