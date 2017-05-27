@@ -1,0 +1,30 @@
+<?php
+
+return [
+
+    "title" => "标题",
+    'new' => "新建",
+    'created_at' => '创建时间',
+    'actions' => '操作',
+    'edit' => '编辑',
+    'details' => '详情',
+    'delete' => '删除',
+    'cancel' => '取消',
+    'ok' => 'OK',
+    "report" => "报告",
+    'close' => '关闭',
+    'back' => '返回',
+    'search' => '搜索',
+    'start' => '开始',
+    'prev' => '上一页',
+    'next' => '下一页',
+    'last' => '末页',
+    'filter' => '(在 _MAX_ 个记录中过滤)',
+    'view' => '显示 0 到 0 个记录，在总计 0 个记录中',
+    'show' => '显示从 _START_ 到 _END_ 个记录，在总计 _TOTAL_ 个记录中',
+    'noresult' => '没有记录',
+    'showmenu' => '每页显示 _MENU_ 记录',
+    'processing' => '正在获取 ...',
+    'sort' => '排序',
+    'emptytable' => '暂无数据',
+];

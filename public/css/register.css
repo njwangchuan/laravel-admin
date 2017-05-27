@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+a, button, input {
+  outline: 0 none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 50px;
+  height: 100%
+}
+
+body {
+  font-size: 24px;
+  height: 100%
+}
+
+@media screen and (min-width:320px) {
+  html {
+    font-size: 21.333333333333332px;
+    height: 100%
+  }
+  body {
+    font-size: 12px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:360px) {
+  html {
+    font-size: 24px;
+    height: 100%
+  }
+  body {
+    font-size: 12px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:375px) {
+  html {
+    font-size: 25px;
+    height: 100%
+  }
+  body {
+    font-size: 12px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:384px) {
+  html {
+    font-size: 25.6px;
+    height: 100%
+  }
+  body {
+    font-size: 14px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:400px) {
+  html {
+    font-size: 26.666666666666668px;
+  }
+  body {
+    font-size: 14px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:414px) {
+  html {
+    font-size: 27.6px;
+    height: 100%
+  }
+  body {
+    font-size: 14px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:424px) {
+  html {
+    font-size: 28.266666666666667px;
+  }
+  body {
+    font-size: 14px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:480px) {
+  html {
+    font-size: 32px;
+    height: 100%
+  }
+  body {
+    font-size: 15.36px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:540px) {
+  html {
+    font-size: 36px;
+    height: 100%
+  }
+  body {
+    font-size: 17.28px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:720px) {
+  html {
+    font-size: 48px;
+    height: 100%
+  }
+  body {
+    font-size: 23.04px;
+    height: 100%
+  }
+}
+
+@media screen and (min-width:750px) {
+  html {
+    font-size: 50px;
+    height: 100%
+  }
+  body {
+    font-size: 24px;
+    height: 100%
+  }
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, section, article, aside, header, footer, nav, dialog, figure, hgroup {
+  margin: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img {
+  border: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+ul, ol, li {
+  list-style: none
+}
+
+em, i {
+  font-style: normal
+}
+
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+input, img {
+  vertical-align: middle;
+}
+
+input:focus, a:focus {
+  outline: none;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: STXIHEI, Arial, Helvetica, sans-serif;
+  background: url(../image/loginbg.png) no-repeat center bottom;
+  background-size: 15rem 10.14rem;
+  -moz-background-size: 15rem 10.14rem;
+  -ms-background-size: 15rem 10.14rem;
+  -webkit-background-size: 15rem 10.14rem;
+  height: 100%;
+  width: 100%;
+}
+
+.clear:after {
+  display: block;
+  content: "";
+  clear: both;
+  overflow: hidden;
+  height: 0px;
+}
+
+input::-moz-placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+
+.w {
+  max-width: 15rem;
+  margin: 0 auto;
+}
+
+.ch-content {
+  padding-top: 0px;
+  padding-bottom: 1.94rem;
+  padding-top: 1.42rem;
+}
+
+.ch-content:after {
+  clear: both;
+  overflow: hidden;
+  display: block;
+  content: "";
+}
+
+
+/*--------------头部页面--------------*/
+
+.ch-bar-nav {
+  clear: both;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 1.42rem;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.ch-header-back {
+  height: 1.42rem;
+  float: left;
+  padding-left: 10px;
+}
+
+.ch-header-back .goback {
+  height: 1.42rem;
+  line-height: 1.42rem;
+  font-size: 0.68rem;
+  display: block;
+  padding-left: 0.8rem;
+  color: #000000;
+  background: url(../image/goback.png) no-repeat left center;
+  background-size: 0.38rem .62rem;
+  -moz-background-size: 0.38rem .62rem;
+  -ms-background-size: 0.38rem .62rem;
+  -webkit-background-size: 0.38rem .62rem;
+  text-decoration: none;
+}
+
+.ch-bar-nav .ch-title {
+  display: inline-block;
+  position: absolute;
+  left: 2.36rem;
+  right: 2.36rem;
+  top: 0px;
+  height: 1.42rem;
+  line-height: 1.42rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.68rem;
+  text-align: center;
+  font-weight: normal;
+  color: #000;
+}
+
+.ch-title span {
+  font-size: 0.68rem;
+  color: #000;
+}
+
+
+/*--------------注册页面--------------*/
+
+.register-div {
+  padding-top: 1.42rem;
+}
+
+.register-div li {
+  clear: both;
+  overflow: hidden;
+}
+
+.register-column {
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  position: relative;
+}
+
+.register-column label {
+  float: left;
+  font-size: 0.56rem;
+  width: 3rem;
+}
+
+.register-column input {
+  border: none;
+  background: none;
+  margin-left: 0.1rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  overflow: hidden;
+}
+
+.register-ul .xieyi {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.register-ul .xieyi a {
+  color: #F00;
+  text-decoration: underline;
+}
+
+.register-ul .xieyi span.on {
+  display: inline-block;
+  padding-left: 1.25rem;
+  background: url(../image/checkon.png) no-repeat 0.45rem center;
+  background-size: 0.5rem 0.5rem;
+  -moz-background-size: 0.5rem 0.5rem;
+  -ms-background-size: 0.5rem 0.5rem;
+  -webkit-background-size: 0.5rem 0.5rem;
+}
+
+.register-ul .loginbtn {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.4rem;
+  display: block;
+  line-height: 1.6rem;
+  color: #fff;
+  background: #fe5b4c;
+  text-align: center;
+  border: 1px solid #fe5b4c;
+  font-size: 0.72rem;
+  font-family: 黑体 Arial, Helvetica, sans-serif;
+  border-radius: 0.1rem;
+}
+
+.logoinimg {
+  height: 5.44rem;
+  background: #fff;
+  text-align: center;
+}
+
+.register-column .code {
+  display: inline-block;
+  background: #f9752b;
+  height: 1rem;
+  line-height: 1rem;
+  color: #fff;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 0.1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.register-div li .help-block {
+  display: block;
+  color: #F00;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

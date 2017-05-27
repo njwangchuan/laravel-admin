@@ -1,0 +1,68 @@
+{
+    "name": "njwangchuan/laravel-admin",
+    "description": "Admin Framework with Laravel 5",
+    "keywords": ["framework", "laravel", "admin"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*",
+        "Zizaco/entrust": "dev-laravel-5",
+        "laravelcollective/html": "^5.2",
+        "yajra/laravel-datatables-oracle": "^6.11",
+        "intervention/image": "^2.3",
+        "cviebrock/image-validator": "^2.0",
+        "predis/predis": "^1.0",
+        "jenssegers/imagehash": "^0.4.0",
+        "mews/captcha": "^2.1",
+        "barryvdh/laravel-debugbar": "^2.2",
+        "propaganistas/laravel-phone": "^2.8",
+        "orangehill/iseed": "2.2"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "symfony/css-selector": "2.8.*|3.0.*",
+        "symfony/dom-crawler": "2.8.*|3.0.*",
+        "laracasts/generators": "^1.1"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}

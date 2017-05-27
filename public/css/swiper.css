@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+/*-导航菜单拖动点击切换--*/
+.menu_swiper{ height:50px; background:#fff; border-bottom:1px solid #ccc;}
+.swiper-container {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 1
+}
+ .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box
+}
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate(0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
+}
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out
+}
+.swiper-container-fade .swiper-slide {
+	pointer-events: none
+}
+.swiper-slide {flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; width:100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;    
+    }
+.swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex: 0 0 auto;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative
+}	
+.swiper-sliden:nth-last-child(2){}	
+.swiper-button-next, .swiper-button-prev {font-size:24px;
+	position: absolute;
+	top: 50%;
+	width: 15px;
+	height:34px;
+	margin-top: -15px;
+	z-index: 10;
+	cursor: pointer;
+ 	background-position: center;
+	background-repeat: no-repeat
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+	opacity:0.9;
+	cursor: auto;
+	pointer-events: none
+}
+.swiper-button-prev{
+	background:url(../image/pre.png) no-repeat left top;
+	left:10px;
+	right: auto
+}
+
+.swiper-button-next{ background:url(../image/next.png) no-repeat left top;
+	right:10px;
+	left: auto
+}
+
+.swiper-pagination {bottom: 10px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.3s ease 0s;
+    z-index: 10;
+}

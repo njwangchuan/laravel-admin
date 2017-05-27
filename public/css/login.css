@@ -1,0 +1,25 @@
+section {
+  padding: 100px 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+  .container> header {
+    text-align: center;
+  }
+  p.codrops-demos {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+.index-login {
+  border-radius: 6px;
+  margin-top: 10px;
+  border: 1px solid #e1e8ed;
+  background-color: #ffffff;
+}
+.index-login-form {
+  margin: 20px 5px;
+}

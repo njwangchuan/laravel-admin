@@ -1,0 +1,12 @@
+{
+  "name": "laravel-admin",
+  "version": "1.0.0",
+  "dependencies": {
+    "startbootstrap-sb-admin-2": "^1.0.8",
+    "select2": "^4.0.2",
+    "jquery-colorbox": "^1.6.3",
+    "summernote": "^0.8.1",
+    "mjolnic-bootstrap-colorpicker": "^2.3.0",
+    "bootstrap-markdown": "^2.10.0"
+  }
+}
