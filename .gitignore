@@ -1,0 +1,8 @@
+vendor
+node_modules
+resources/assets/bower
+Homestead.yaml
+Homestead.json
+.env
+.DS_Store
+composer.lock
