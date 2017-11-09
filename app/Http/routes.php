@@ -13,7 +13,8 @@
 
 Route::group(['middleware' => ['web']], function () {
 
-  Route::auth();
+  Auth::routes();
+  Route::get('/logout', 'Auth\LoginController@logout');
   Route::get('home', 'HomeController@index');
   Route::get('auto-login', 'HomeController@autoLogin');
   Route::get('copyright', 'HomeController@copyright');
@@ -22,8 +23,6 @@ Route::group(['middleware' => ['web']], function () {
     return redirect('login');
   })->middleware('guest');
 
-  // Authentication Routes...
-  Route::auth();
   /***************    Admin routes  **********************************/
   Route::group(['prefix' => 'admin', 'middleware' => 'role:admin|owner'], function () {
 

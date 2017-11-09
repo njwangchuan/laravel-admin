@@ -80,6 +80,7 @@ class UserController extends AdminController
   */
   public function edit(Request $request,User $user)
   {
+    Log::info($request);
     $mode = 'edit';
     if ($request->has('role')) {
       $role = Role::where('name', $request->input('role'))->first();
@@ -111,6 +112,9 @@ class UserController extends AdminController
       }
     }
     $roleIds = $request->roles;
+    if (!isset($roleIds)){
+      $roleIds=[];
+    }
     $user->roles()->sync($roleIds);
     $user->update($request->except('password', 'password_confirmation'));
   }
@@ -153,7 +157,13 @@ class UserController extends AdminController
     ->add_column('actions', '@if ($id!="1")<a href="{{{ URL::to(\'admin/user/\' . $id . \'/edit\') }}}" class="btn btn-success btn-sm iframe" ><span class="glyphicon glyphicon-pencil"></span>  {{ trans("admin/modal.edit") }}</a>
     <a href="{{{ URL::to(\'admin/user/\' . $id . \'/delete\' ) }}}" class="btn btn-sm btn-danger iframe"><span class="glyphicon glyphicon-trash"></span> {{ trans("admin/modal.delete") }}</a>
     @endif')
-    ->edit_column('roles', '@foreach ($roles as $role) <span class="label" style="background-color:{{$role[\'tag_color\']}}">{{ $role[\'display_name\']}}</span> @endforeach')
+    ->edit_column('roles', function($user){
+      $resp = '';
+      foreach ($user->roles as $key => $value) {
+        $resp .= '<span class="label" style="background-color:'.$value->tag_color.'">'.$value->display_name.'</span>';
+      }
+      return $resp;
+    })
     ->make(true);
     return $datas;
   }
