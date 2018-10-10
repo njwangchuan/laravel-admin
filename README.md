@@ -1,24 +1,25 @@
-# Laravel Framework 5.3 Admin Site
+# Laravel Framework 5.4 Admin Site
 
 --------------------------------------------------------------------------------
 
 ## 系统要求
 
 ```
-PHP >= 5.6.4
+PHP >= 7.0.0
 OpenSSL PHP Extension
 Mbstring PHP Extension
+PDO PHP Extension
 Tokenizer PHP Extension
-SQL server(for example MySQL)
+XML PHP Extension
 Composer
-Node JS
+Node.js
 ```
 
 --------------------------------------------------------------------------------
 
 ## 系统功能
 
-- Laravel 5.3.x
+- Laravel 5.4.x
 - 后台
 
   - 用户管理
