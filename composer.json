@@ -5,10 +5,10 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.6.4",
-        "laravel/framework": "5.3.*",
+        "php": ">=7.0.0",
+        "laravel/framework": "5.4.*",
         "Zizaco/entrust": "dev-laravel-5",
-        "laravelcollective/html": "^5.3",
+        "laravelcollective/html": "^5.4",
         "yajra/laravel-datatables-oracle": "^6.11",
         "intervention/image": "^2.3",
         "cviebrock/image-validator": "^2.0",
@@ -17,14 +17,15 @@
         "mews/captcha": "^2.1",
         "barryvdh/laravel-debugbar": "^2.2",
         "propaganistas/laravel-phone": "^2.8",
-        "orangehill/iseed": "2.2"
+        "orangehill/iseed": "dev-master",
+        "laravel/tinker": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "symfony/css-selector": "2.8.*|3.0.*",
-        "symfony/dom-crawler": "2.8.*|3.0.*",
+        "phpunit/phpunit": "~5.7",
+        "symfony/css-selector": "3.1.*",
+        "symfony/dom-crawler": "3.1.*",
         "laracasts/generators": "^1.1"
     },
     "autoload": {
@@ -58,11 +59,5 @@
     },
     "config": {
         "preferred-install": "dist"
-    },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
-        }
     }
 }

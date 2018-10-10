@@ -151,6 +151,13 @@
 
   </script>
   @yield('scripts')
+  <script type="text/javascript">
+  $(function () {
+    var x = $('body').width();
+    var y = $('body').height();
+    parent.$(".iframe").colorbox.resize({width:x, height:y + 50});
+  });
+  </script>
 </div>
 </body>
 </html>

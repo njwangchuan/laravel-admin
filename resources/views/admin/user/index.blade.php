@@ -35,7 +35,7 @@
         <table id="table" class="table table-striped table-hover">
           <thead>
             <tr>
-              <th data-name="username">{!! trans("admin/users.username") !!}</th>
+              <th data-name="username" data-searchable="true">{!! trans("admin/users.username") !!}</th>
               <th data-name="display_name">{!! trans("admin/users.display_name") !!}</th>
               <th data-name="confirmed">{!! trans("admin/users.confirmed") !!}</th>
               <th data-name="created_at">{!! trans("admin/admin.created_at") !!}</th>

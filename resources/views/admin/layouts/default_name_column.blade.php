@@ -42,6 +42,7 @@
   @section('styles')
   <link href="{{ asset('css/site.css') }}" rel="stylesheet">
   <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/custom-admin.css') }}" rel="stylesheet">
   @show
 </head>
 <body>
@@ -175,10 +176,22 @@ $(document).ready(function () {
     "fnDrawCallback": function (oSettings) {
       $(".iframe").colorbox({
         iframe: true,
-        width: "90%",
-        height: "90%",
+        width: "66%",
+        height: "auto",
         onClosed: function () {
-          oTable.ajax.reload();
+          oTable.draw(false);
+        }
+      });
+    },
+    "initComplete": function(settings, json) {
+      $("#search-form").detach().appendTo('.toolbar').show();
+      $('#search-form select').on('change', function (e) {
+        if ($(this).val()) {
+          oTable.column($(this).attr('name') + ":name").search($(this).val()).draw();
+          $('#export-form input[name='+$(this).attr('name')+']').val($(this).val());
+        } else {
+          oTable.column($(this).attr('name') + ":name").search('').draw();
+          $('#export-form input[name='+$(this).attr('name')+']').val('');
         }
       });
     }
