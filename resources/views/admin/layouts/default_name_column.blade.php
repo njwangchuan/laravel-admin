@@ -57,9 +57,9 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand page-scroll" href="{{ (Request::is('home')||Request::is('/') ? '#page-top' : URL::to('home')) }}">
-          <img alt="校友会" src="{{ asset('img/cgpi.jpg') }}" height="20">
+          <img alt="laravel" src="{{ asset('img/logo_transparent.jpg') }}" height="20">
         </a>
-        <a class="navbar-brand" href="{{url('admin/dashboard')}}">Laravel Admin管理后台</a>
+        <a class="navbar-brand" href="{{url('admin/dashboard')}}">Laravel Admin 管理后台</a>
       </div>
       <!-- /.navbar-header -->
       <ul class="nav navbar-top-links navbar-right">

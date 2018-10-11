@@ -1,16 +1,18 @@
-# Laravel Framework 5.4 Admin Site
+# Laravel Framework 5.5 Admin Site
 
 --------------------------------------------------------------------------------
 
 ## 系统要求
 
 ```
-PHP >= 7.0.0
+PHP >= 7.1.3
 OpenSSL PHP Extension
 Mbstring PHP Extension
 PDO PHP Extension
 Tokenizer PHP Extension
 XML PHP Extension
+Ctype PHP Extension
+JSON PHP Extension
 Composer
 Node.js
 ```
@@ -19,7 +21,7 @@ Node.js
 
 ## 系统功能
 
-- Laravel 5.4.x
+- Laravel 5.5
 - 后台
 
   - 用户管理
@@ -104,7 +106,7 @@ http://localhost/laravel-admin/public
 
 ### Step 6: 访问页面
 
-你现在可以登录系统，具有`admin`角色的用户登录后会跳转至后台，其余用户登录后会跳转至前台
+你现在可以登录系统，具有`admin`角色的用户登录后会默认跳转至后台管理页面，一般用户登录后会跳转至前台首页
 
 ```
 username: admin
