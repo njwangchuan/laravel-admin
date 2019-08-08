@@ -59,12 +59,13 @@ class UserController extends AdminController
   */
   public function store(UserRequest $request)
   {
+    Log::info($request);
     $user = new User($request->except('password', 'password_confirmation'));
     $user->password = bcrypt($request->password);
     if (!$user->confirmed) {
       //Send a confirm email to new user;
-      $user->confirmation_code = str_random(32);
-      $this->dispatch(new SendMail($user));
+      //$user->confirmation_code = str_random(32);
+      //$this->dispatch(new SendMail($user));
     }
     $roleIds = $request->roles;
     $user->save();

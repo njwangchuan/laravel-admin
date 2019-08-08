@@ -58,9 +58,9 @@
       {!! Form::label('confirmed', trans("admin/users.active_user"), array('class' => 'control-label')) !!}
       <div class="controls">
         {!! Form::label('confirmed', trans("admin/users.yes"), array('class' => 'control-label')) !!}
-        {!! Form::radio('confirmed', '1', @isset($user)? $user->confirmed : 'false') !!}
+        {!! Form::radio('confirmed', '1', isset($user)? $user->confirmed : 'false') !!}
         {!! Form::label('confirmed', trans("admin/users.no"), array('class' => 'control-label')) !!}
-        {!! Form::radio('confirmed', '0', @isset($user)? $user->confirmed : 'true') !!}
+        {!! Form::radio('confirmed', '0', isset($user)? $user->confirmed : 'true') !!}
         <span class="help-block">{{ $errors->first('confirmed', ':message') }}</span>
       </div>
     </div>

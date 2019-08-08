@@ -40,8 +40,8 @@
   @show
 </head>
 <body id="{{ (Request::is('home')||Request::is('/') ? 'page-top' : 'index') }}">
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top {{ (Request::is('home') ? '' : 'affix') }}">
-    <div class="container-fluid">
+  <nav id="mainNav" class="navbar navbar-default {{ (Request::is('home') ? '' : 'affix') }}">
+    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <a class="navbar-brand page-scroll" href="{{ (Request::is('home')||Request::is('/') ? '#page-top' : URL::to('home')) }}">
@@ -86,7 +86,7 @@
       </div>
     </div>
   </nav>
-  <div id="page-wrapper">
+  <div id="page-wrapper" class="container">
     @yield('content')
   </div>
   @section('scripts')

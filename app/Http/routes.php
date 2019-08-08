@@ -20,7 +20,7 @@ Route::group(['middleware' => ['web']], function () {
   Route::get('copyright', 'HomeController@copyright');
   Route::get('captcha/create', ['as' => 'captcha.create', 'uses' => 'CaptchaController@create']);
   Route::get('/', function () {
-    return redirect('login');
+    return redirect('home');
   })->middleware('guest');
 
   /***************    Admin routes  **********************************/
